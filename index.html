@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petar Rančić - CV</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // JavaScript to toggle dark and light theme
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle('dark-theme');
+      body.classList.toggle('light-theme');
+   
+    }
+
+    // Set default theme based on system preference or default to dark
+    window.onload = function() {
+      const body = document.body;
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.add('light-theme');
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Petar Rančić</h1>
+      <p>Email: <a href="mailto:petarrancic1993@gmail.com">petarrancic1993@gmail.com</a> | Phone: +381 66 026 925</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/petarrancic03" target="_blank">www.linkedin.com/in/petarrancic03</a> | GitHub: <a href="https://github.com/petar030" target="_blank">github.com/petar030</a></p>
+      <button onclick="toggleTheme()">Switch Theme</button>
+    </header>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Grammar School</strong> – Pirot, Serbia, Department of Information Technology, September 2018 – June 2022</li>
+        <li><strong>School of Electrical Engineering, University of Belgrade</strong> – Belgrade, Serbia, Bachelor's Degree in Software Engineering, July 2022 – expected June 2026</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming languages:</strong> C, C++, C#, Java, SQL, Assembly, Python</li>
+        <li><strong>Libraries:</strong> C: POSIX, GTK, Glib, Win32 API | Java: AWT, Swing, JavaFX | Python: SQLite, bcrypt</li>
+        <li><strong>Tools:</strong> Git, SQLite, MySQL, GDB, CMake</li>
+        <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem-solving, Adaptability</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>PassManager – Local password manager app</strong>
+          <p>A personal project designed to securely manage and store login credentials in encrypted password files, functioning entirely offline. It uses Python and Fernet encryption for secure storage. The tool offers a reliable solution for password management with support for both interactive and command-line interfaces.</p>
+        </li>
+        <li><strong>Multithreaded RISC-V Kernel</strong>
+          <p>A fully functional multithreaded OS kernel for the RISC-V architecture, written in C, C++, and Assembly. It includes features such as asynchronous context switching, semaphore synchronization, and dynamic memory allocation.</p>
+        </li>
+        <li><strong>Compresso – File compression app</strong>
+          <p>Contributed to the development of a file compression application in C and GTK, utilizing LZW (Lempel-Ziv-Welch) and Dynamic Huffman algorithms for efficient data compression.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>Cambridge English: B2 First (FCE)</strong> – Certified at B2 level in English by Cambridge, April 2020, Belgrade, Serbia</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Petar Rančić</p>
+    </footer>
+  </div>
+</body>
+</html>

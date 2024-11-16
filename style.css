@@ -1,0 +1,148 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+body.dark-theme {
+    background-color: #2f2f2f;  /* Dark background */
+    color: #eaeaea;  /* Light text color for contrast */
+}
+
+body.light-theme {
+    background-color: #ffffff; /* Light background */
+    color: #333333;  /* Dark text color */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Color for h1 in dark theme */
+body.dark-theme h1 {
+    color: #ffffff;  /* White text for h1 in dark theme */
+}
+
+/* Color for h1 in light theme */
+body.light-theme h1 {
+    color: #333333;  /* Dark text for h1 in light theme */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #bbbbbb;  /* Light gray text */
+}
+
+header a {
+    color: #00bfff;  /* Sky blue for links */
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    background-color: #00bfff;  /* Darker background for section headers */
+    color: #ffffff;  /* White text for section headers */
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+body.light-theme h2 {
+    background-color: #00bfff; /* Lighter background for section headers in light mode */
+    color: #333333;  /* Dark text for section headers in light mode */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #ffffff;  /* White text for strong emphasis */
+    font-weight: bold;
+}
+
+body.light-theme ul li strong {
+    color: #333333; /* Dark text for strong emphasis in light mode */
+}
+
+ul li p {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #d3d3d3;  /* Light gray for descriptions */
+}
+
+body.light-theme ul li p {
+    color: #666666; /* Darker text for descriptions in light mode */
+}
+
+ul li a {
+    color: #00bfff;  /* Sky blue for links */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #bbbbbb;  /* Light gray text for footer */
+}
+
+body.light-theme footer {
+    color: #333333; /* Darker text for footer in light mode */
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #00bfff;
+    color: #ffffff;
+}
